@@ -1,0 +1,81 @@
+:root {
+    color: #20242a;
+    background: #f3f4f6;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { min-height: 100vh; display: grid; }
+
+body { margin: 0; }
+
+button { font: inherit; }
+
+#root {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+}
+
+.counter-card {
+    width: min(26rem, 100%);
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #d8dce2;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    margin: auto;
+}
+
+.label {
+    color: #646b76;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+p {
+    margin: 0;
+    color: #5f6670;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.counter-card button {
+    min-width: 9rem;
+    min-height: 2.75rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background: #2563eb;
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.counter-card button:hover { background: #1d4ed8; }
+
+.counter-card button:active { background: #1e40af; }
+
+.counter-card button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+.loading {
+    color: #646b76;
+    font-size: 0.9rem;
+}
