@@ -25,4 +25,4 @@ source/
 ```
 
 The Program declaration lives in `phresh.config.ts`. Its own service contract
-is documented in `api-docs.md`.
+is exposed as the `counter` Server service and documented in `api-docs.md`.

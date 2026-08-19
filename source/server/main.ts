@@ -1,4 +1,5 @@
 import { current } from "@phreshos/server"
+import docs from "@/api-docs.md?raw"
 
 // The Server owns the value. Every Client representation reads and changes
 // this same state instead of keeping an independent browser counter.
@@ -12,3 +13,5 @@ current.subscribe("increment", async function () {
 
     current.publish("changed", count)
 })
+
+await current.enableService({ name: "counter", docs })

@@ -1,6 +1,6 @@
 # Counter API
 
-The Server owns one number for the lifetime of its Process.
+The `counter` Server service owns one number for the lifetime of its Process.
 
 | Name | Destination | Interaction | Payload | Answer |
 | --- | --- | --- | --- | --- |
@@ -14,7 +14,13 @@ The Server owns one number for the lifetime of its Process.
 current counter value.
 
 ```ts
-const count = await process.server.ask<number>("read")
+const counter = host.service({
+  program: "phresh-program",
+  endpoint: "server",
+  name: "counter"
+})
+
+const count = await counter.channel.ask<number>("read")
 ```
 
 ## Publish to the Server: `increment`
@@ -23,7 +29,7 @@ const count = await process.server.ask<number>("read")
 to the counter and does not produce an answer.
 
 ```ts
-process.server.publish("increment")
+counter.channel.publish("increment")
 ```
 
 ## Subscribe to the Server: `changed`
@@ -32,7 +38,7 @@ After an increment, the Server emits `changed` with the new counter value.
 Anyone holding that Process's Server can subscribe to the event.
 
 ```ts
-process.server.subscribe<number>("changed", count => {
+counter.channel.subscribe<number>("changed", count => {
   // use the latest count
 })
 ```

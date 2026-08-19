@@ -24,11 +24,6 @@ export default defineConfig({
     description: "A simple counter whose state lives on the Server.",
     version: "0.1.2",
 
-    // Markdown entry point for the API owned by this Program. It documents the
-    // counter service contract; PhreshOS endpoint mechanics belong in PhreshOS
-    // documentation instead of being repeated here.
-    apiDocs: "api-docs.md",
-
     // One authored PNG. Installation gives it a canonical name and the system
     // derives the standard hosted icon sizes from it.
     icon: "icon.png",

@@ -21,6 +21,6 @@ without a PhreshOS workspace around it.
 
 ## Pull requests
 
-Explain the Program behavior the change serves, update `api-docs.md` when its
+Explain the service behavior the change serves, update `api-docs.md` when its
 counter contract changes, and keep each pull request focused on one coherent
 change.
