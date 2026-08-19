@@ -1,13 +1,14 @@
 {
     "name": "phresh-program",
     "private": true,
-    "version": "0.1.1",
+    "version": "0.1.2",
     "type": "module",
     "scripts": {
         "check": "tsc --noEmit",
         "build": "node --import tsx source/build.ts",
         "dev": "phresh dev",
         "start": "phresh start",
+        "pack": "phresh pack",
         "verify": "node --run check && node --run build && node --import tsx scripts/verify-build.mjs"
     },
     "author": "Zohayr SLILEH",
@@ -30,7 +31,7 @@
         "react-dom": "^19.2.8"
     },
     "devDependencies": {
-        "@phreshos/cli": "^0.1.9",
+        "@phreshos/cli": "^0.1.10",
         "@types/node": "^26.2.0",
         "@types/react": "^19.2.18",
         "@types/react-dom": "^19.2.4",
