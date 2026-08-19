@@ -36,7 +36,7 @@ export default defineConfig({
     // Prepares both production endpoint directories. The CLI runs it from this
     // project before `phresh start`, `phresh install`, and `phresh pack`.
     // `phresh dev` does not build and uses the declarations below instead.
-    buildCommand: "node --import tsx source/build.ts",
+    buildCommand: "vite-node --config vite.server.ts source/build.ts",
 
     // A Process may run its Server and Client independently. This declaration
     // says how the Server is prepared and started; it does not merge Server
@@ -63,7 +63,7 @@ export default defineConfig({
             // `phresh dev` runs this command from the project directory. The
             // project directory becomes the development Server location, so
             // source imports and watch mode work without a production build.
-            startCommand: "node --watch --import tsx source/server/main.ts"
+            startCommand: "vite-node --watch --config vite.server.ts source/server/main.ts"
         }
     },
 

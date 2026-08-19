@@ -13,7 +13,6 @@ export default defineConfig({
         tsconfigPaths: true
     },
     ssr: {
-        noExternal: true,
         external: externalDependencies
     },
     build: {
