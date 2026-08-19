@@ -22,7 +22,7 @@ export default defineConfig({
     // these values determines the Program's identity.
     name: "Phresh Program",
     description: "A simple counter whose state lives on the Server.",
-    version: "0.1.0",
+    version: "0.1.1",
 
     // Markdown entry point for the API owned by this Program. It documents the
     // counter service contract; PhreshOS endpoint mechanics belong in PhreshOS
