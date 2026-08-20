@@ -22,7 +22,7 @@ export default defineConfig({
     // these values determines the Program's identity.
     name: "Phresh Program",
     description: "A simple counter whose state lives on the Server.",
-    version: "0.1.3",
+    version: "0.1.4",
 
     // One authored PNG. Installation gives it a canonical name and the system
     // derives the standard hosted icon sizes from it.
