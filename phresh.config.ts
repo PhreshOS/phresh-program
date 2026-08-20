@@ -22,7 +22,7 @@ export default defineConfig({
     // these values determines the Program's identity.
     name: "Phresh Program",
     description: "A simple counter whose state lives on the Server.",
-    version: "0.1.5",
+    version: "0.1.6",
 
     // One authored PNG. Installation gives it a canonical name and the system
     // derives the standard hosted icon sizes from it.
@@ -31,7 +31,7 @@ export default defineConfig({
     // Prepares both production endpoint directories. The CLI runs it from this
     // project before `phresh start`, `phresh install`, and `phresh pack`.
     // `phresh dev` does not build and uses the declarations below instead.
-    buildCommand: "vite-node --config vite.server.ts source/build.ts",
+    buildCommand: "vite-node scripts/build.ts",
 
     // A Process may run its Server and Client independently. This declaration
     // says how the Server is prepared and started; it does not merge Server
@@ -57,8 +57,8 @@ export default defineConfig({
 
             // `phresh dev` runs this command from the project directory. The
             // project directory becomes the development Server location, so
-            // source imports and watch mode work without a production build.
-            startCommand: "vite-node --watch --config vite.server.ts source/server/main.ts"
+            // source imports work without a production build.
+            startCommand: "vite-node source/server/main.ts"
         }
     },
 

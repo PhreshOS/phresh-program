@@ -16,12 +16,17 @@ production shape, build and attach the Program with:
 bun phresh start
 ```
 
-The structure follows the endpoint boundaries directly:
+The structure keeps composition, representation, and authoritative behavior distinct:
 
 ```text
 source/
-├── client/   React interface
-└── server/   authoritative counter and API
+├── client/
+│   ├── main.tsx   Client composition
+│   └── view/      React representation
+└── server/
+    ├── main.ts    Server composition
+    ├── core/      authoritative counter
+    └── view/      endpoint adapter and service exposure
 ```
 
 The Program declaration lives in `phresh.config.ts`. Its own service contract
