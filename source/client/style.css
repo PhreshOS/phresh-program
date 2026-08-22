@@ -1,17 +1,23 @@
 :root {
     color: #20242a;
     background: #f3f4f6;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
     font-synthesis: none;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-html, body, #root { min-height: 100vh; display: grid; }
+html,
+body,
+#root {
+    min-height: 100%;
+}
 
-body { margin: 0; }
-
-button { font: inherit; }
+body {
+    margin: 0;
+}
 
 #root {
     min-height: 100vh;
@@ -20,19 +26,15 @@ button { font: inherit; }
     padding: 1.5rem;
 }
 
-.counter-card {
+main {
     width: min(26rem, 100%);
-    display: grid;
-    justify-items: start;
-    gap: 1rem;
     padding: 2rem;
     border: 1px solid #d8dce2;
     border-radius: 0.75rem;
     background: #ffffff;
-    margin: auto;
 }
 
-.label {
+span {
     color: #646b76;
     font-size: 0.72rem;
     font-weight: 700;
@@ -41,41 +43,13 @@ button { font: inherit; }
 }
 
 h1 {
-    margin: 0;
+    margin: 0.75rem 0;
     font-size: 2rem;
     line-height: 1.1;
-    letter-spacing: -0.04em;
 }
 
 p {
     margin: 0;
     color: #5f6670;
-    font-size: 0.95rem;
-    line-height: 1.55;
-}
-
-.counter-card button {
-    min-width: 9rem;
-    min-height: 2.75rem;
-    padding: 0.65rem 1rem;
-    border: 0;
-    border-radius: 0.5rem;
-    color: #ffffff;
-    background: #2563eb;
-    cursor: pointer;
-    font-weight: 650;
-}
-
-.counter-card button:hover { background: #1d4ed8; }
-
-.counter-card button:active { background: #1e40af; }
-
-.counter-card button:focus-visible {
-    outline: 3px solid rgba(37, 99, 235, 0.25);
-    outline-offset: 2px;
-}
-
-.loading {
-    color: #646b76;
-    font-size: 0.9rem;
+    line-height: 1.5;
 }

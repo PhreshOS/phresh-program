@@ -1,33 +1,21 @@
 # Phresh Program
 
-A small Counter built as a complete Program. Its Node.js Server owns the
-number, while its React Client reads and increments that same authoritative
-state.
+The minimal PhreshOS starter Program. It has one browser Client, no Server,
+no service, and no application architecture to learn before getting started.
 
 ```bash
 bun install
-bun phresh dev
+bun run dev
 ```
 
-Development starts the Server source and Vite Client together. For the
-production shape, build and attach the Program with:
-
-```bash
-bun phresh start
-```
-
-The structure keeps composition, representation, and authoritative behavior distinct:
+The complete authored source is intentionally small:
 
 ```text
-source/
-├── client/
-│   ├── main.tsx   Client composition
-│   └── view/      React representation
-└── server/
-    ├── main.ts    Server composition
-    ├── core/      authoritative counter
-    └── view/      endpoint adapter and service exposure
+source/client/
+├── index.html
+├── main.tsx
+└── style.css
 ```
 
-The Program declaration lives in `phresh.config.ts`. Its own service contract
-is exposed as the `counter` Server service and documented in `api-docs.md`.
+`phresh.config.ts` declares the Program and its Client. `bun run build` creates
+the production Client in `dist/client`.

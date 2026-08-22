@@ -12,17 +12,6 @@
         "types": [
             "@types/node",
             "vite/client"
-        ],
-        "paths": {
-            "@/*": [
-                "./*"
-            ],
-            "@server/*": [
-                "./source/server/*"
-            ],
-            "@client/*": [
-                "./source/client/*"
-            ]
-        }
+        ]
     }
 }
