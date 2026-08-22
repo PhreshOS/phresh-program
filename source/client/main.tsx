@@ -1,12 +1,14 @@
+import { current } from "@phreshos/client"
 import { StrictMode } from "react"
-import { createRoot } from "react-dom/client"
+import client from "react-dom/client"
 import App from "./app"
 import "./style.css"
 
-const root = document.getElementById("root")
-
-if (!root) throw new Error("The Client page has no root element")
-
-createRoot(root).render(
-    <StrictMode><App /></StrictMode>
+await current.window.local.surface.set(
+    { radius: "medium" },
+    { duration: 240, easing: "ease-out" }
 )
+
+const root = client.createRoot(document.body)
+
+root.render(<StrictMode><App /></StrictMode>)
