@@ -23,5 +23,4 @@ source/
 
 `app.tsx` owns the small React component. The two `main` files are direct
 endpoint entries: the Client renders the app and the Server owns the counter.
-The Client uses the same `medium` local Window Surface radius as Setup. Nothing
-registers or exposes a named service.
+Nothing registers or exposes a named service.
