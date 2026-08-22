@@ -53,3 +53,25 @@ p {
     color: #5f6670;
     line-height: 1.5;
 }
+
+button {
+    margin-top: 1.5rem;
+    min-height: 2.75rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background: #2563eb;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 650;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:focus-visible {
+    outline: 3px solid rgb(37 99 235 / 25%);
+    outline-offset: 2px;
+}

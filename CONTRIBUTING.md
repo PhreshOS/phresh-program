@@ -1,7 +1,8 @@
 # Contributing
 
-Phresh Program is the minimal client-only PhreshOS starter. Changes belong here
-when they keep the starter small, direct, and independently runnable.
+Phresh Program is the minimal Client-and-Server PhreshOS starter. Changes
+belong here when they keep both endpoints direct, free of premature MVC
+structure, and independently runnable.
 
 ## Development
 
@@ -12,10 +13,10 @@ bun install --frozen-lockfile
 bun run verify
 ```
 
-`verify` type-checks the project, builds the Client, and checks the production
-entry point against the authored Program declaration. The repository must
-remain independently installable and runnable without a PhreshOS workspace
-around it.
+`verify` type-checks the project, builds both endpoints, and checks the
+production entry points against the authored Program declaration. The
+repository must remain independently installable and runnable without a
+PhreshOS workspace around it.
 
 ## Pull requests
 
