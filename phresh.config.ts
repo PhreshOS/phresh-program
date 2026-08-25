@@ -4,7 +4,7 @@ export default defineConfig({
     identity: "phresh",
     name: "Phresh Program",
     description: "A minimal counter with direct Client and Server endpoints.",
-    version: "0.1.12",
+    version: "0.1.13",
     icon: "icon.png",
     buildCommand: "vite-node scripts/build.ts",
     server: {
