@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "phresh-program",
+      "name": "phresh",
       "dependencies": {
         "@phreshos/client": "^0.1.13",
         "@phreshos/core": "^0.1.9",

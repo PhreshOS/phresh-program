@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs"
 import config from "../phresh.config"
 import manifest from "../package.json" with { type: "json" }
 
-assert.equal(config.identity, "phresh-program")
+assert.equal(config.identity, "phresh")
 assert.equal(config.name, "Phresh Program")
 assert.equal(config.version, manifest.version)
 assert.equal(config.server?.location, "dist/server")
