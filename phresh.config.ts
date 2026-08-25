@@ -6,6 +6,9 @@ export default defineConfig({
     description: "A minimal counter with direct Client and Server endpoints.",
     version: "0.1.13",
     icon: "icon.png",
+    categories: ["Development"],
+    keywords: ["example", "counter", "client", "server"],
+    website: "https://github.com/PhreshOS/phresh-program",
     buildCommand: "vite-node scripts/build.ts",
     server: {
         location: "dist/server",
