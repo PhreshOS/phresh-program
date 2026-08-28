@@ -13,7 +13,7 @@
         "react-dom": "^19.2.8",
       },
       "devDependencies": {
-        "@phreshos/cli": "^0.1.30",
+        "@phreshos/cli": "^0.1.31",
         "@types/node": "^26.2.0",
         "@types/react": "^19.2.18",
         "@types/react-dom": "^19.2.4",
@@ -85,7 +85,7 @@
 
     "@oxc-project/types": ["@oxc-project/types@0.144.0", "", {}, "sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg=="],
 
-    "@phreshos/cli": ["@phreshos/cli@0.1.30", "", { "dependencies": { "@clack/prompts": "^1.7.0", "@phreshos/core": "^0.1.20", "adm-zip": "^0.6.0", "commander": "^15.0.0", "picocolors": "^1.1.1" }, "bin": { "phresh": "dist/cli.js" } }, "sha512-ktMkVVVrjpMBSGRQterLKIUTOXsOki1Ogio+d40tiDFn7W3KwFc0Tb0lMvYRvAFgcVqHK+4yc1xnmnPCQHU9VA=="],
+    "@phreshos/cli": ["@phreshos/cli@0.1.31", "", { "dependencies": { "@clack/prompts": "^1.7.0", "@phreshos/core": "^0.1.20", "adm-zip": "^0.6.0", "commander": "^15.0.0", "jiti": "^2.7.0", "picocolors": "^1.1.1" }, "bin": { "phresh": "dist/cli.js" } }, "sha512-0wJc/6gRB41Pxl5+GRiYAVZ9DkqiYQRX8GkWhokVnqCyprNwy1iTR4d99IICsvwBxi2bk7yubOiZE6gnHjIOLw=="],
 
     "@phreshos/client": ["@phreshos/client@0.1.22", "", { "dependencies": { "@msgpack/msgpack": "^3.1.3" }, "peerDependencies": { "@phreshos/core": "^0.1.19" } }, "sha512-PFxQDjUd3nWut/xQrRqFxd9o9bih+6lTtPXmoWIMhrO7ZbMp7Ys2T7wsRUQ8qQ6dNN/7Ggcz/q7f6X/pdM5STA=="],
 
@@ -196,6 +196,8 @@
     "fdir": ["fdir@6.5.0", "", { "peerDependencies": { "picomatch": "^3 || ^4" }, "optionalPeers": ["picomatch"] }, "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg=="],
 
     "fsevents": ["fsevents@2.3.3", "", { "os": "darwin" }, "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="],
+
+    "jiti": ["jiti@2.7.0", "", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ=="],
 
     "lightningcss": ["lightningcss@1.33.0", "", { "dependencies": { "detect-libc": "^2.0.3" }, "optionalDependencies": { "lightningcss-android-arm64": "1.33.0", "lightningcss-darwin-arm64": "1.33.0", "lightningcss-darwin-x64": "1.33.0", "lightningcss-freebsd-x64": "1.33.0", "lightningcss-linux-arm-gnueabihf": "1.33.0", "lightningcss-linux-arm64-gnu": "1.33.0", "lightningcss-linux-arm64-musl": "1.33.0", "lightningcss-linux-x64-gnu": "1.33.0", "lightningcss-linux-x64-musl": "1.33.0", "lightningcss-win32-arm64-msvc": "1.33.0", "lightningcss-win32-x64-msvc": "1.33.0" } }, "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA=="],
 
