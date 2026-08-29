@@ -4,7 +4,7 @@ export default defineConfig({
     identity: "phresh",
     name: "Phresh Program",
     description: "A minimal counter with direct Client and Server endpoints.",
-    version: "0.1.18",
+    version: "0.1.19",
     icon: "icon.png",
     categories: ["Development"],
     keywords: ["example", "counter", "client", "server"],
