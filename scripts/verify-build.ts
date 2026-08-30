@@ -8,7 +8,7 @@ assert.equal(config.name, "Phresh Program")
 assert.equal(config.version, manifest.version)
 assert.equal(config.server?.location, "dist/server")
 assert.equal(config.server?.entryFile, "main.js")
-assert.equal(config.server?.development?.startCommand, "vite-node source/server/main.ts")
+assert.equal(config.server?.development?.startCommand, "vite-node server/main.ts")
 assert.equal(config.client?.location, "dist/client")
 assert.deepEqual(config.client?.size, { width: 600, height: 500 })
 

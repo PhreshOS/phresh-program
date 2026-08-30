@@ -2,7 +2,7 @@ import { defineConfig } from "vite"
 import { resolve } from "node:path"
 
 export default defineConfig({
-    root: "source/server",
+    root: "server",
     build: {
         ssr: true,
         emptyOutDir: true,

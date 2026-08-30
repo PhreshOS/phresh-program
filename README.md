@@ -8,17 +8,16 @@ bun install
 bun run dev
 ```
 
-The complete authored source is intentionally small:
+The complete Program is intentionally small:
 
 ```text
-source/
-├── client/
-│   ├── app.tsx
-│   ├── index.html
-│   ├── main.tsx
-│   └── style.css
-└── server/
-    └── main.ts
+client/
+├── app.tsx
+├── index.html
+├── main.tsx
+└── style.css
+server/
+└── main.ts
 ```
 
 `app.tsx` owns the small React component. The two `main` files are direct
