@@ -1,10 +1,10 @@
-import { current } from "@phreshos/server"
+import { context } from "@phreshos/server"
 
 let count = 0
 
-current.answer("read", () => count)
+context.answer("read", () => count)
 
-current.subscribe("increment", () => {
+context.subscribe("increment", () => {
     count += 1
-    current.publish("changed", count)
+    context.publish("changed", count)
 })
