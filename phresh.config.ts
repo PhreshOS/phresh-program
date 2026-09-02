@@ -22,7 +22,6 @@ export default defineConfig({
         title: "Phresh Program",
         size: { width: 600, height: 500 },
         development: {
-            url: "http://localhost:5200/",
             startCommand: "vite --config vite.client.ts"
         }
     }
