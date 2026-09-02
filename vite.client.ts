@@ -5,13 +5,12 @@ import { resolve } from "node:path"
 export default defineConfig({
     root: "client",
     plugins: [react()],
-    base: "./",
+    base: process.env.PHRESHOS_CLIENT_BASE ?? "./",
     resolve: {
         tsconfigPaths: true,
         dedupe: ["react"]
     },
     server: {
-        cors: true,
         port: 5200,
         strictPort: true
     },
