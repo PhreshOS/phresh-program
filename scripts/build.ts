@@ -1,6 +1,6 @@
+import packageConfig from "../package.json" with { type: "json" }
 import { externalDependencies } from "../vite.config"
 import { rm, writeFile } from "node:fs/promises"
-import packageConfig from "../package.json" with { type: "json" }
 
 process.env.NODE_ENV = "production"
 
