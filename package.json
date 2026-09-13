@@ -31,14 +31,14 @@
   ],
   "dependencies": {
     "@phreshos/client": "^0.1.39",
-    "@phreshos/core": "^0.1.43",
+    "@phreshos/core": "^0.1.44",
     "@phreshos/react": "^0.1.22",
     "@phreshos/server": "^0.1.43",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@phreshos/cli": "^0.1.54",
+    "@phreshos/cli": "^0.1.55",
     "@types/node": "^26.4.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
