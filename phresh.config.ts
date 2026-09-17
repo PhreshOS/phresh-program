@@ -12,9 +12,9 @@ export default defineConfig({
     buildCommand: "vite-node scripts/build.ts",
     server: {
         location: "dist/server",
-        entryFile: "main.js",
+        worker: "main.js",
         development: {
-            startCommand: "vite-node server/main.ts"
+            command: "vite-node server/main.ts"
         }
     },
     client: {
