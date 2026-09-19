@@ -10,7 +10,7 @@ test("build contract", async () => {
   assert.equal(config.version, manifest.version)
   assert.equal(config.server?.location, "dist/server")
   assert.equal(config.server?.worker, "main.js")
-  assert.equal(config.server?.development?.command, "vite-node server/main.ts")
+  assert.equal(config.server?.devCommand, "vite-node server/main.ts")
   assert.equal(config.client?.location, "dist/client")
   assert.deepEqual(config.client?.size, { width: 600, height: 500 })
 

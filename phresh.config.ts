@@ -4,7 +4,7 @@ export default defineConfig({
     identity: "phresh",
     name: "Phresh Program",
     description: "A minimal counter with direct Client and Server endpoints.",
-    version: "0.1.39",
+    version: "0.1.40",
     icon: "icon.png",
     categories: ["Development"],
     keywords: ["example", "counter", "client", "server"],
@@ -13,16 +13,12 @@ export default defineConfig({
     server: {
         location: "dist/server",
         worker: "main.js",
-        development: {
-            command: "vite-node server/main.ts"
-        }
+        devCommand: "vite-node server/main.ts"
     },
     client: {
         location: "dist/client",
         title: "Phresh Program",
         size: { width: 600, height: 500 },
-        development: {
-            startCommand: "vite --config vite.client.ts"
-        }
+        devCommand: "vite --config vite.client.ts"
     }
 })
