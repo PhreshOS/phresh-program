@@ -33,7 +33,7 @@
     "@phreshos/client": "^0.1.48",
     "@phreshos/core": "^0.1.56",
     "@phreshos/react": "^0.1.29",
-    "@phreshos/server": "^0.1.52",
+    "@phreshos/server": "^0.1.53",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
