@@ -1,7 +1,7 @@
 {
   "name": "phresh",
   "private": true,
-  "version": "0.1.41",
+  "version": "0.1.42",
   "description": "The official PhreshOS starter Program.",
   "type": "module",
   "packageManager": "bun@1.3.14",
@@ -30,10 +30,10 @@
     "starter"
   ],
   "dependencies": {
-    "@phreshos/client": "^0.1.47",
-    "@phreshos/core": "^0.1.55",
+    "@phreshos/client": "^0.1.48",
+    "@phreshos/core": "^0.1.56",
     "@phreshos/react": "^0.1.29",
-    "@phreshos/server": "^0.1.51",
+    "@phreshos/server": "^0.1.52",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

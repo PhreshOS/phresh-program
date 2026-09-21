@@ -14,7 +14,7 @@ bun run verify
 ```
 
 `verify` type-checks the project, builds both endpoints, and checks the
-production entry points against the authored Program declaration. The
+production entry points against the authored Program definition. The
 repository must remain independently installable and runnable without a
 PhreshOS workspace around it.
 
