@@ -8,7 +8,7 @@
         "@phreshos/client": "^0.1.54",
         "@phreshos/core": "^0.1.65",
         "@phreshos/react": "^0.1.34",
-        "@phreshos/server": "^0.1.55",
+        "@phreshos/server": "^0.1.59",
         "react": "^19.2.8",
         "react-dom": "^19.2.8",
       },
@@ -98,7 +98,7 @@
 
     "@phreshos/react": ["@phreshos/react@0.1.34", "", { "peerDependencies": { "@phreshos/core": "^0.1.64", "react": "^19.2.0" } }, "sha512-sOIFTTP6DFXgvssPSk0J85mtBgglzV3HzonnuWZxGu8GXWg2phAEUtBZkSzFTbs/VeCDCC3aQwDgF+Sed4s1Rw=="],
 
-    "@phreshos/server": ["@phreshos/server@0.1.55", "", { "dependencies": { "@the-link/ipc": "^0.2.2", "@the-link/messagepack": "^0.1.0" }, "peerDependencies": { "@phreshos/core": "^0.1.59" } }, "sha512-2UVk15Hh2Ve1UbeGu1rbQ9/awevNZzIqON17jNQWwzwiIN8XtUc+ui31BFXfH89F/rxJeWkD2x/yaszS+DT72w=="],
+    "@phreshos/server": ["@phreshos/server@0.1.59", "", { "dependencies": { "@the-link/ipc": "^0.2.2", "@the-link/messagepack": "^0.1.0" }, "peerDependencies": { "@phreshos/core": "^0.1.65" } }, "sha512-9f7w2HmK5cQg0pZKB03eijcrhqLI4eU6FQN+TUt8vQozqKMJZEU9+2NG32vpGwwmtlZVavIicQenr5fu/HIxeQ=="],
 
     "@rolldown/binding-android-arm64": ["@rolldown/binding-android-arm64@1.2.4", "", { "os": "android", "cpu": "arm64" }, "sha512-jHC2cnyKz5xU2fhECtFl8OZ83cYNt13GZQD+0uMJ/X3o+ijmd56okHhTUwxVSHPx1IRVIJEZ1/1pPzeLCU6XKA=="],
 
