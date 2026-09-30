@@ -1,10 +1,11 @@
-import react from "@vitejs/plugin-react"
+import react, { reactCompilerPreset } from "@vitejs/plugin-react"
+import babel from "@rolldown/plugin-babel"
 import { defineConfig } from "vite"
 import { resolve } from "node:path"
 
 export default defineConfig({
     root: "client",
-    plugins: [react()],
+    plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
     base: process.env.PHRESHOS_CLIENT_BASE ?? "./",
     resolve: {
         tsconfigPaths: true,
