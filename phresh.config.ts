@@ -4,7 +4,7 @@ export default defineConfig({
     identity: "phresh",
     name: "Phresh Program",
     description: "A ready starting point: pages in a sidebar, drawn with React UI, and a counter its Server keeps.",
-    version: "0.1.49",
+    version: "0.2.0",
     // The Desktop's own icon for a Program that has none yet: replace icon.png with yours.
     icon: "icon.png",
     categories: ["Development"],
