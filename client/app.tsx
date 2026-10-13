@@ -1,28 +1,36 @@
 import { useEffect, useState } from "react"
 import { context } from "@phreshos/client"
 import { useSubscribe } from "@phreshos/react"
-import { AppLayout, Button, Flex, Heading, Panel, Text, Tree } from "@phreshos/react-ui"
+import { AppLayout, Button, Flex, Heading, Panel, Text, Tree, useAppLayout } from "@phreshos/react-ui"
 import { House, Info, Plus } from "@phreshos/react-ui/icons"
 
 type Page = "home" | "about"
 
-/** A sidebar of pages, and the chosen page beside it. Add a page: one Tree item and one case below. */
+/**
+ * A sidebar of pages, and the chosen page beside it. Add a page: one Tree item and one case below.
+ * In a narrow window the sidebar waits in a drawer, which the header's toggle opens.
+ */
 export default function App() {
     const [page, setPage] = useState<Page>("home")
 
     return <AppLayout style={{ height: "100%", padding: "0.75rem" }}>
         <AppLayout.Title>Phresh Program</AppLayout.Title>
-        <AppLayout.Sidebar aria-label="Pages">
-            <Tree aria-label="Pages" selectionMode="single" value={page} onChange={value => { if (value) setPage(value as Page) }}>
-                <Tree.Item id="home" textValue="Home"><Tree.Content><House />Home</Tree.Content></Tree.Item>
-                <Tree.Item id="about" textValue="About"><Tree.Content><Info />About</Tree.Content></Tree.Item>
-            </Tree>
-        </AppLayout.Sidebar>
-        <AppLayout.Header>{page === "home" ? "Home" : "About"}</AppLayout.Header>
+        <AppLayout.Sidebar aria-label="Pages"><Pages page={page} choose={setPage} /></AppLayout.Sidebar>
+        <AppLayout.Header><AppLayout.SidebarToggle />{page === "home" ? "Home" : "About"}</AppLayout.Header>
         <AppLayout.Content>
             {page === "home" ? <Home /> : <About />}
         </AppLayout.Content>
     </AppLayout>
+}
+
+/** The pages to choose from; a choice also closes the drawer they wait in when the window is narrow. */
+function Pages({ page, choose }: Readonly<{ page: Page, choose: (page: Page) => void }>) {
+    const { closeSidebar } = useAppLayout()
+
+    return <Tree aria-label="Pages" selectionMode="single" value={page} onChange={value => { if (value) { choose(value as Page); closeSidebar() } }}>
+        <Tree.Item id="home" textValue="Home"><Tree.Content><House />Home</Tree.Content></Tree.Item>
+        <Tree.Item id="about" textValue="About"><Tree.Content><Info />About</Tree.Content></Tree.Item>
+    </Tree>
 }
 
 /** A counter the Server keeps: the Client asks for it once, and hears every change. */
